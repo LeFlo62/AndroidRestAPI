@@ -1,4 +1,4 @@
-package fr.isep.androidrestapi
+package fr.isep.mobiledev.androidrestapi
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import fr.isep.androidrestapi.ui.theme.AndroidRestAPITheme
+import fr.isep.mobiledev.androidrestapi.ui.theme.AndroidRestAPITheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "fr.isep.androidrestapi"
-    compileSdk = 33
+    namespace = "fr.isep.mobiledev.androidrestapi"
+    compileSdk = 34
 
     defaultConfig {
-        applicationId = "fr.isep.androidrestapi"
+        applicationId = "fr.isep.mobiledev.androidrestapi"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 

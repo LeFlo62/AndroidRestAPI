@@ -27,11 +27,9 @@ public class GroceriesController {
 
     @GetMapping("/{id}")
     public ResponseEntity<GroceryDTO> getById(@PathVariable("id") long id){
-        Optional<Grocery> groceryOpt = groceryService.findById(id);
-        if(groceryOpt.isPresent()){
-            return ResponseEntity.ok(groceryMapper.mapToDTO(groceryOpt.get()));
-        }
-        return ResponseEntity.notFound().build();
+        return groceryService.findById(id)
+                .map(grocery -> ResponseEntity.ok(groceryMapper.mapToDTO(grocery)))
+                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     @PostMapping("update")

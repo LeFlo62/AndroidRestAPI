@@ -1,4 +1,4 @@
-package fr.isep.androidrestapi
+package fr.isep.mobiledev.androidrestapi
 
 import org.junit.Test
 

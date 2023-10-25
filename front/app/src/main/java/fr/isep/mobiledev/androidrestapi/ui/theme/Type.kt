@@ -1,4 +1,4 @@
-package fr.isep.androidrestapi.ui.theme
+package fr.isep.mobiledev.androidrestapi.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

@@ -1,4 +1,4 @@
-package fr.isep.androidrestapi.ui.theme
+package fr.isep.mobiledev.androidrestapi.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
