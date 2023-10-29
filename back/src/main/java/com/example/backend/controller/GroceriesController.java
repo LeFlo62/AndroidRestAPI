@@ -13,14 +13,14 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("groceries")
+@RequestMapping("/groceries")
 @AllArgsConstructor
 public class GroceriesController {
 
     private GroceryService groceryService;
     private GroceryMapper groceryMapper;
 
-    @PostMapping("add")
+    @PostMapping("/add")
     public ResponseEntity<Long> add(@RequestBody GroceryDTO dto){
         return ResponseEntity.ok(groceryService.add(groceryMapper.mapToEntity(dto)).getId());
     }
@@ -32,12 +32,12 @@ public class GroceriesController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    @PostMapping("update")
+    @PostMapping("/update")
     public HttpStatus update(@RequestBody GroceryDTO dto){
         groceryService.update(groceryMapper.mapToEntity(dto));
         return HttpStatus.OK;
     }
-    @PostMapping("remove")
+    @PostMapping("/remove")
     public HttpStatus remove(@RequestBody GroceryDTO dto){
         groceryService.remove(groceryMapper.mapToEntity(dto));
         return HttpStatus.OK;
